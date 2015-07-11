@@ -1,0 +1,290 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+body {
+	background-image: url(../images/white_wall_hash/white_wall_hash_@2X.png);
+	padding: 1.5%;
+	font-size: 16px;
+	width: 100%;
+}
+
+.col {
+  border: 1px solid black;
+  height: 200px;
+  background-color: #eeeeee;
+}
+
+/*body {
+    margin-top: 100px;
+    background-color: #222;
+}*/
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 135px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 101px;
+        left: 225px;
+        width: 135px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #9c0000;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .navbar-brand {
+      height: 100px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #720000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+h1 {
+  font-family: futura;
+  color: #be0a0b;
+}
+
+.logo {
+  width: 120px;
+}
+
+.motto {
+  font-family: CygnetRound;
+  margin-left: 175px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.navbar-inverse {
+  background-color: #9c0000;
+  border-color: #9c0000;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #720000;
+}
+
+#prof-pic {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.no-pad {
+  padding: 0px;
+}
+
+.con-pic {
+  padding: 0px;
+  width: 100%;
+}
+
+.info {
+  border-radius: 25px;
+  border: 2px solid #720000;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+/*old site css*/
+
+#side-bar {
+	width: 20%;
+	float: left;
+}
+
+.pages {
+	font-size: 1.5rem;
+	text-decoration: none;
+	display: block;
+	font-family: futura;
+	color: #be0a0b;
+	margin-top: 1.5rem;
+}
+
+#main {
+	width: 80%;
+	margin: 0 auto;
+	float: left;
+	padding: 0 2%;
+}
+
+/* Portfolio page css */
+
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 60%; 
+    /* height: 240px; */
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow > div { 
+    /* position: absolute; */
+    width: 100%;
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+
+/* slide show 2 code*/
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 450px;
+}
+
+.section {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.active {
+  opacity: 1;
+}
+
+.controls {
+  text-align: center;
+  width:40%;
+  margin:20px auto;
+  font-size: 3em;
+  font-family: 'Open Sans';
+}
+
+.next, .prev {
+  background: #be0a0b;
+  color: white;
+/*  padding: 6px 20px;*/
+  border-radius: 50%;
+}
+
+.next:hover, .prev:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+
+.of {
+  color: #be0a0b;
+}
+
+/* About page css */
+
+#prof-pic {
+	width: 25%;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+/* Contact page css */
+
+#con-pic, #info {
+	width: 65%;
+	display: block;
+	margin: 0 auto;
+}
+
+p {
+	margin: none;
+}
+
+#info {
+	border: 1px #be0a0b solid;
+	padding: 2%;
+	margin-top: 2%;
+}
+
+/* end of old site */
+
+/* screen sizes less than or equal 768px */
+@media only screen and (max-width: 768px){
+  .logo {
+    width: 50px;
+  }
+
+  .motto {
+    font-size: 1.6rem;
+    margin-left: 60px;
+    margin-top: 27px;
+    color: #ffffff;
+  }
+
+    .navbar-header {
+    width: 100%;
+  }
+} 
