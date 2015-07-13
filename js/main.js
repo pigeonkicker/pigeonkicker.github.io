@@ -1,3 +1,9 @@
+/* carousel code */ 
+
+$('.carousel').carousel({
+  interval: 3000
+})
+
 /* slide show code */ 
 
 $("#slideshow > div:gt(0)").hide();
